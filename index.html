@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content=""IE-edge>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Personal Portfolio Website</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="Images/Logo-removebg-preview.png" class="logo">
+                    <div class="list">
+                        <ul id="sidemenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <img src="Images/white_cross_copy.tiff" onclick="closemenu()">
+                    </ul>
+                    <img src="Images/menu_copy.tiff" onclick="openmenu()" class="menu">
+                </div>
+                </nav>
+                <div class="header-text">
+                    <p>UI/UX Designer</p>
+                    <h1>Hi, I'm <span>Kevin Jen</span><br>from Australia</h1>
+                </div>
+            </div>
+        </div>
+
+        <!-- About Section -->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="Images/user.png">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>I'm a passionate UI/UX designer with a strong eye for creating intuitive and visually appealing user experiences.
+                            With a background in both design and web development, I blend creativity with technical expertise to bring digital products to life.
+                            I thrive on transforming complex ideas into simple, user-centered designs while ensuring seamless functionality across all platforms.
+                            My goal is to bridge the gap between design and development, delivering innovative, responsive, and user-friendly solutions.</p>
+
+                            <div class="tab-titles">
+                                <p class="tab-links active-link" onclick="opentab('skills')"><strong>Skills</strong></p>
+                                <p class="tab-links" onclick="opentab('experience')"><strong>Experience</strong></p>
+                                <p class="tab-links" onclick="opentab('education')"><strong>Education</strong></p>
+                            </div>
+                            <div class="tab-contents active-tab " id="skills">
+                                <ul>
+                                    <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
+                                    <li><span>Web Development</span><br>Web app Development</li>
+                                    <li><span>App Development</span><br>Building Android/IOS apps</li>
+                                </ul>
+                            </div>
+                            <div class="tab-contents" id="experience">
+                                <ul>
+                                    <li><span>2021 - Current</span><br>UI/UX Design Training at ET Institute</li>
+                                    <li><span>2019 - 2021</span><br>Team lead at StarApp LLC.</li>
+                                    <li><span>2017 - 2019</span><br>UI/UX Design Executive at Coin Digital Ltd.</li>
+                                    <li><span>2016 - 2017</span><br>Internship at ekart eCommerce</li>
+                                </ul>
+                            </div>
+                            <div class="tab-contents" id="education">
+                                <ul>
+                                    <li><span>2021</span><br>UI/UX Design Training at ET Institute</li>
+                                    <li><span>2016</span><br>MBA from MIT Bangalore</li>
+                                    <li><span>2014</span><br>BBA from ISM Bangalore</li>
+                                </ul>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Services -->
+         <div id="services">
+            <div class="container">
+                <h1 class="sub-title">My Services</h1>
+                <div class="services-list">
+                    <div>
+                        <img src="Images/code.png" alt="Web Design">
+                        <h2>Web Design</h2>
+                        <p>I have an ample amount of knowledge about Web Designing as I have been doing the work of Web Designing since last 5 years.</p>
+                        <a href="#"><strong>Learn More...</strong></a>
+                    </div>
+                    <div>
+                        <img src="Images/laptop.png" alt="UI Design">
+                        <h2>UI/UX Design</h2>
+                        <p>I am great at UI/UX Design as I have studied the course of UI/UX Designing at the ET Institute for 4 years.</p>
+                        <a href="#"><strong>Learn More...</strong></a>
+                    </div>
+                    <div>
+                        <img src="Images/chip.png" alt="App Design">
+                        <h2>App Design</h2>
+                        <p>I can provide App Designing Services as I lead the App Development and Design team at StarApp LLC.</p>
+                        <a href="#"><strong>Learn More...</strong></a>
+                    </div>
+                </div>
+
+            </div>
+         </div>
+
+         <!-- Portfolio -->
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">My Work</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="Images/work1.jpg">
+                        <div class="layer">
+                            <h3><strong>Social Media App</strong></h3>
+                            <p>The app connects you to the talented people around the world.
+                            Download it from the Play Store.</p>
+                            <a href="#"><img src="Images/external-link.png"></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="Images/work2.jpg">
+                        <div class="layer">
+                            <h3><strong>Music App</strong></h3>
+                            <p>The app lets you browse music and also make a playlist of your favourite genre.</p>
+                            <a href="#"><img src="Images/external-link.png"></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="Images/work3.jpg">
+                        <div class="layer">
+                            <h3><strong>Online Shopping App</strong></h3>
+                            <p>The app lets you purchase items and get them delivered to your location.</p>
+                            <a href="#"><img src="Images/external-link.png"></a>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="#" class="btn">See More</a>
+            </div>
+        </div>
+
+        <!-- Contact -->
+         <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <img src="Images/Mail.png">
+                        <p>contactme@example.com</p>
+                        <img src="Images/Contact.png">
+                        <p>0123456789</p>
+                        <div class="social-icons">
+                            <a href="https://facebook.com/"><img src="Images/Facebook.png"></a>
+                            <a href="https://www.instagram.com/"><img src="Images/Twitter.png"></a>
+                            <a href="https://x.com/"><img src="Images/Instagram.png"></a>
+                            <a href="https://web.telegram.org/"><img src="Images/Telegram.png"></a>
+                        </div>
+                        <a href="Kevin_CV.pdf" download class="btn btn2">Download CV</a>
+                    </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="email" placeholder="Your e-mail" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                        <span id="msg"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright ©️ Kevin. Made with ❤️ by Harsh Yadav.</p>
+            </div>
+         </div>
+
+        <script>
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+            function opentab(tabname){
+                for(tablink of tablinks){
+                tablink.classList.remove("active-link")
+                }
+                for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab")
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab")
+            }
+        </script>
+
+        <script>
+            var sidemenu=document.getElementById("sidemenu")
+            function openmenu(){
+                sidemenu.style.right = "0"
+            }
+            function closemenu(){
+                sidemenu.style.right = "-200px"
+            }
+        </script>
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbwogbDu7-bleA2XlSvpO8o_-xkSOtxhaSptiIItaaJibT3P4KtHJ105puRTQcVG6x4D/exec'
+            const form = document.forms['submit-to-google-sheet']
+            const msg = document.getElementById("msg")
+
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                    msg.innerHTML="Message Sent succesfully !"
+                    setTimeout(function(){
+                        msg.innerHTML=""
+                    },5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+            })
+          </script>
+        
+    </body>
+
+</html>
